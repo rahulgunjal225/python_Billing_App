@@ -1,85 +1,74 @@
 # python_Billing_App
 The goal of this project is to develop a GUI-based billing application for a retail store using Python and Tkinter. It helps shopkeepers easily manage customer orders, calculate item-wise and category-wise totals, apply taxes, and generate a final bill that can be saved and retrieved later.
+✅ Features
+ Customer Management
+Input customer name and phone number
 
-🛠️ Core Functionalities
-1. Customer Entry Section
-Users enter the customer's name, phone number, and optionally search for an existing bill.
+Generate a unique bill number for each order
 
-A random 4-digit bill number is generated for each transaction.
+Search and view previously saved bills
 
-2. Product Categories
-The application has three major product categories:
+ Product Billing
+Organized into three main categories:
 
-Cosmetics (e.g., soap, face wash, lotion)
+ Cosmetics: Soap, Face Cream, Face Wash, Hair Spray, Gel, Lotion
 
-Grocery (e.g., rice, sugar, tea)
+ Grocery: Rice, Food Oil, Daal, Wheat, Sugar, Tea
 
-Cold Drinks (e.g., Pepsi, Sprite, Red Bull)
+ Cold Drinks: Mazza, Coke, Thumbs Up, Pepsi, Sprite, Red Bull
 
-Each product has:
+Quantity input for each product
 
-A quantity input field
+Fixed price per unit for each product
 
-Fixed price per unit
+Automatic calculation of item-wise and category-wise total
 
-Backend calculation to multiply quantity × price
+ Tax Calculation
+Applies 5% GST separately for:
 
-3. Price and Tax Calculation
-Totals are calculated automatically when the “Total” button is clicked.
+Cosmetics
 
-A 5% GST is applied to each category separately.
+Grocery
 
-All prices and taxes are displayed in the bottom panel.
+Cold Drinks
 
-4. Bill Area
-The bill is dynamically generated in the text area.
+Displays tax amounts and final bill total
 
-It includes product name, quantity, price, and tax breakdown.
+🧾 Bill Generation
+Displays a detailed invoice with:
 
-The total bill is shown at the end.
+Product name
 
-5. Save Bill Feature
-The bill can be saved to a .txt file inside the Bills/ folder.
+Quantity
 
-Each file is named using the unique bill number.
+Price
 
-6. Search Bill
-A user can retrieve an old bill by entering the bill number.
+Tax breakdown
 
-If the file exists, it is displayed in the bill area.
+Final total
 
-7. Clear & Exit Options
-Clear resets all entries and variables.
+Dynamic bill shown in a scrollable Text Area
 
-Exit closes the application with a confirmation prompt.
+ Save & Retrieve Bills
+Bills can be saved as .txt files inside a Bills/ folder
 
-📁 How It Works (Flow)
-User enters customer details and product quantities.
+Search previous bills using bill number
 
-Clicks 'Total' to compute price + taxes.
+ Utility Buttons
+Total: Calculate product totals and taxes
 
-Clicks 'Generate Bill' to print bill in the text area.
+Generate Bill: Create and display the final bill
 
-Can save the bill to a .txt file.
+Clear: Reset all inputs and start fresh
 
-Future searches can retrieve saved bills by number.
+Exit: Close the application with confirmation
 
-👨‍💻 Why This Project is Useful
-Gives real-world experience with Tkinter GUI
+Error Handling
+Alerts if required fields are missing
 
-Involves file handling, logic building, and error handling
+Prevents bill generation if no products are selected
 
-Teaches how to break a problem into multiple small, manageable parts
+Notifies if an invalid bill number is searched
 
-Useful for retail shops, mini supermarkets, or counters where manual billing is still common
 
-🔧 Optional Improvements (Future Scope)
-Add login system for different staff users
 
-Add PDF export of bills using reportlab
-
-Connect to SQLite/MySQL database for long-term data storage
-
-Use Modern UI toolkit like customtkinter
-
-Add discounts, stock tracking, and analytics dashboard
